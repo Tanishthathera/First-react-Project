@@ -28,10 +28,13 @@ const Carousel = () => {
       className="carousel slide"
       style={{
         position: "relative",
-        width: "50%",
+        width: "100%",
         height: "50vh",
         overflow: "hidden",
-        margin: "300px",
+        margin: "auto",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <div
@@ -43,7 +46,7 @@ const Carousel = () => {
           overflow: "hidden",
           display: "flex",
           justifyContent: "center",
-          alignItems: "center", // Add this
+          alignItems: "center",
         }}
       >
         <div
@@ -56,7 +59,7 @@ const Carousel = () => {
             height: "100%",
             display: currentIndex === 0 ? "flex" : "none",
             justifyContent: "center",
-            alignItems: "center", // Add this
+            alignItems: "center",
           }}
         >
           <img
@@ -80,7 +83,7 @@ const Carousel = () => {
             height: "100%",
             display: currentIndex === 1 ? "flex" : "none",
             justifyContent: "center",
-            alignItems: "center", // Add this
+            alignItems: "center",
           }}
         >
           <img
@@ -104,7 +107,7 @@ const Carousel = () => {
             height: "100%",
             display: currentIndex === 2 ? "flex" : "none",
             justifyContent: "center",
-            alignItems: "center", // Add this
+            alignItems: "center",
           }}
         >
           <img
@@ -128,8 +131,9 @@ const Carousel = () => {
         style={{
           position: "absolute",
           top: "50%",
-          left: 100,
+          left: 20,
           transform: "translateY(-50%)",
+          zIndex: 1,
         }}
       >
         <span
@@ -150,8 +154,9 @@ const Carousel = () => {
         style={{
           position: "absolute",
           top: "50%",
-          right: 100,
+          right: 20,
           transform: "translateY(-50%)",
+          zIndex: 1,
         }}
       >
         <span

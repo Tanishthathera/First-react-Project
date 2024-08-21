@@ -7,48 +7,104 @@
   /* color: #ffffff; */
 }
 
-header {
+.header {
   display: flex;
-  /* background-color: #a3a7bb;   */
-  /* height: 80px; */
   justify-content: space-between;
   align-items: center;
-  /* border-bottom: 1px solid #b6b1b1; */
+  padding: 20px;
 }
 
 .T2_home {
-  height: 55px;
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
 }
 
-.container {
-  margin-left: 4%;
-}
-
-.home {
-  height: 45px;
-}
-
-.nav_bar {
+.nav_bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  min-width: 800px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.nav_bar li {
+  margin-left: 100px;
 }
 
 .nav_bar a {
-  font-size: 14px;
+  text-decoration: none;
   letter-spacing: 0.3px;
   color: #bfc3d6;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
-  /* padding: 15px 0px 0px 0px; */
+  transition: color 0.2s ease;
 }
 
-.nav_bar a:hover {
+.nav_bar li:hover {
   border-bottom: 4px solid #4ad5ee;
   margin-top: 10px;
 }
 
+
+.action_button {
+  margin-left: 20px;
+}
+
+.action_button button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action_button button:hover {
+  background-color: #0ddbff;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_bar ul {
+    flex-direction: column;
+  }
+
+  .nav_bar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .action_button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .T2_home {
+    width: 50px;
+    height: 25px;
+  }
+
+  .nav_bar a {
+    font-size: 14px;
+    
+  }
+
+  .nav_bar a:hover {
+    border-bottom: 4px solid #4ad5ee;
+    margin-top: 10px;
+  }
+
+  .action_button button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
 /* .btn{
   margin: 10px 0px 0px 0px;
 } */
@@ -162,7 +218,7 @@ header {
   text-align: center;
   color: #2ecc71;
   margin-bottom: 50px;
-
+  font-size: xxx-large;
 }
 
 .mt-2 {
