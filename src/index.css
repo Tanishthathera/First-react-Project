@@ -310,6 +310,108 @@ label {
   padding-bottom: 30px;
 }
 
+/* Make the row container responsive */
+.row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 20px 50px 20px;
+}
+
+/* Make the column container responsive */
+.col {
+  flex-basis: 20%;
+  margin: 20px;
+}
+
+/* Make the services container responsive */
+.services {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 20px;
+  border: 1px solid #577a7a;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the paragraph responsive */
+.para {
+  font-size: 20px;
+  font-weight: 1000;
+  color: #c7c7c7;
+  margin:  0px 20px 60px 0px;
+  text-align: start;
+  overflow: hidden;
+  height: 100px;
+}
+
+/* Make the image responsive */
+.service-img {
+  /* width:50%; */
+  height: 150px;
+  object-fit: cover;
+  margin: 10px 0px 0px 0px;
+  padding: 10px 0px 0px 10px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 1200px) {
+  .col {
+    flex-basis: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col {
+    flex-basis: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex-basis: 50%;
+  }
+  .services {
+    padding: 10px;
+  }
+  .para {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .col {
+    flex-basis: 100%;
+  }
+  .services {
+    padding: 5px;
+  }
+  .para {
+    font-size: 12px;
+  }
+}
+
+/* Add hover effect to the card */
+.services:hover {
+  box-shadow: 0 0 40px #2df8ffad;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #2dffffad;
+}
+
+/* Add zoom effect to the image on hover */
+.service-img {
+  transition: all 0.3s ease-in-out;
+}
+
+.services:hover .service-img {
+  transform: scale(1.1);
+}
+
+
  
 
 

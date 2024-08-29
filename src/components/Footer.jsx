@@ -46,7 +46,6 @@ const Footer = () => {
           <a href="#">Wealth Management Platform</a>
         </div>
       </div>
-      <hr />
 
       <div className="location">
         <a href="#Googlemap">
@@ -54,7 +53,6 @@ const Footer = () => {
         </a>
         <span>INDIA</span>
       </div>
-      <hr />
 
       <div className="copyright">© 2024 www.xyz.com. All rights reserved.</div>
 
