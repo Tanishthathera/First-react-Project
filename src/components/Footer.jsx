@@ -57,7 +57,7 @@ const Footer = () => {
       <div className="copyright">© 2024 www.xyz.com. All rights reserved.</div>
 
       <div className="social_link">
-        <a href="#Instagram">
+        <a href="#Instagram.com">
           <FaInstagram />
         </a>
         <a href="#X">
